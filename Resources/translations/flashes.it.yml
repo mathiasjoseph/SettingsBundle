@@ -1,0 +1,6 @@
+# This file is part of the Miky package.
+# (c) Paweł Jędrzejewski
+
+miky:
+    settings:
+        update: Le impostazioni sono state aggiornate con successo.
