@@ -1,6 +1,6 @@
 {
   "name" : "mikycorp/settingsbundle",
-  "description" : "A Resource bundle",
+  "description" : "A Settings bundle",
   "type" : "symfony-bundle",
   "authors" : [{
     "name" : "Mathias Joseph",
