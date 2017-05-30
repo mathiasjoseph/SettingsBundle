@@ -1,6 +1,2 @@
-# This file is part of the Miky package.
-# (c) Paweł Jędrzejewski
-
-miky:
-    settings:
-        ad: Annonce
+miky_settings:
+    settings: Paramètres
