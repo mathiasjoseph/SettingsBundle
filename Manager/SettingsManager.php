@@ -11,6 +11,7 @@
 
 namespace Miky\Bundle\SettingsBundle\Manager;
 
+use Doctrine\Common\Persistence\ObjectManager;
 use Miky\Bundle\SettingsBundle\Event\SettingsEvent;
 use Miky\Bundle\SettingsBundle\Model\SettingsInterface;
 use Miky\Bundle\SettingsBundle\Resolver\SettingsResolverInterface;
@@ -18,7 +19,6 @@ use Miky\Bundle\SettingsBundle\Schema\SchemaInterface;
 use Miky\Bundle\SettingsBundle\Schema\SettingsBuilder;
 use Miky\Component\Registry\ServiceRegistryInterface;
 use Miky\Component\Resource\Factory\FactoryInterface;
-use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 /**

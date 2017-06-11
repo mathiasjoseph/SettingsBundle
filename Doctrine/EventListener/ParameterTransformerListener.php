@@ -11,12 +11,12 @@
 
 namespace Miky\Bundle\SettingsBundle\Doctrine\EventListener;
 
-use Miky\Bundle\SettingsBundle\Model\SettingsInterface;
-use Miky\Bundle\SettingsBundle\Schema\SettingsBuilder;
-use Miky\Bundle\SettingsBundle\Transformer\ParameterTransformerInterface;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Event\OnFlushEventArgs;
+use Miky\Bundle\SettingsBundle\Model\SettingsInterface;
+use Miky\Bundle\SettingsBundle\Schema\SettingsBuilder;
+use Miky\Bundle\SettingsBundle\Transformer\ParameterTransformerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**

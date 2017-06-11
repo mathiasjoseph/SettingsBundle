@@ -11,8 +11,8 @@
 
 namespace Miky\Bundle\SettingsBundle\DependencyInjection;
 
-use Miky\Bundle\ResourceBundle\MikyResourceBundle;
 use Miky\Bundle\ResourceBundle\Controller\ResourceController;
+use Miky\Bundle\ResourceBundle\MikyResourceBundle;
 use Miky\Bundle\SettingsBundle\Model\Settings;
 use Miky\Bundle\SettingsBundle\Model\SettingsInterface;
 use Miky\Component\Resource\Factory\Factory;

@@ -11,8 +11,8 @@
 
 namespace Miky\Bundle\SettingsBundle\Resolver;
 
-use Miky\Component\Resource\Repository\RepositoryInterface;
 use Doctrine\ORM\NonUniqueResultException;
+use Miky\Component\Resource\Repository\RepositoryInterface;
 
 /**
  * Default implementation that resolves settings in the simplest way possible. It tries to find a schema by it's name

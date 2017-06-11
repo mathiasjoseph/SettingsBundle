@@ -11,9 +11,9 @@
 
 namespace Miky\Bundle\SettingsBundle\Controller\Backend;
 
+use FOS\RestBundle\Controller\FOSRestController;
 use Miky\Bundle\SettingsBundle\Form\Factory\SettingsFormFactoryInterface;
 use Miky\Bundle\SettingsBundle\Manager\SettingsManagerInterface;
-use FOS\RestBundle\Controller\FOSRestController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
