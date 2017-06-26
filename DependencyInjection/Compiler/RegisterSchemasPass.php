@@ -33,7 +33,7 @@ class RegisterSchemasPass implements CompilerPassInterface
         }
 
         $schemaRegistry = $container->getDefinition('miky.registry.settings_schema');
-        $taggedServicesIds = $container->findTaggedServiceIds('settings_schema');
+        $taggedServicesIds = $container->findTaggedServiceIds('miky_settings_schema');
 
         foreach ($taggedServicesIds as $id => $tags) {
             foreach ($tags as $attributes) {

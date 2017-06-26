@@ -29,14 +29,6 @@ class MikySettingsExtension extends AbstractResourceExtension
 
         $this->registerResources('miky', $config['driver'], $config['resources'], $container);
 
-        $configFiles = [
-            'services.xml',
-            'templating.xml',
-            'twig.xml',
-        ];
-
-        foreach ($configFiles as $configFile) {
-            $loader->load($configFile);
-        }
+        $loader->load("services.xml");
     }
 }

@@ -5,6 +5,12 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services
                                http://symfony.com/schema/dic/services/services-1.0.xsd">
 
+    <imports>
+        <import resource="services/twig.xml"/>
+        <import resource="services/templating.xml"/>
+        <import resource="services/menu.xml"/>
+        <import resource="services/listeners.xml"/>
+    </imports>
     <parameters>
              <parameter key="miky.settings.form_factory.class">Miky\Bundle\SettingsBundle\Form\Factory\SettingsFormFactory</parameter>
         <parameter key="miky.settings.manager.class">Miky\Bundle\SettingsBundle\Manager\SettingsManager</parameter>
@@ -23,10 +29,7 @@
             <argument type="service" id="miky.registry.settings_schema" />
             <argument type="service" id="form.factory" />
         </service>
-        <service id="miky_bundle_settings.installer.settings_installer" class="Miky\Bundle\SettingsBundle\Installer\SettingsInstaller">
-            <argument type="service" id="miky.settings.manager" />
-           <tag name="miky.installer"/>
-        </service>
+
         <service id="miky.settings.manager" class="%miky.settings.manager.class%">
             <argument type="service" id="miky.registry.settings_schema" />
             <argument type="service" id="miky.registry.settings_resolver" />
