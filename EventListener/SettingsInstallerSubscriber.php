@@ -13,8 +13,6 @@ namespace Miky\Bundle\SettingsBundle\EventListener;
 use Miky\Bundle\InstallerBundle\Event\InstallationEvent;
 use Miky\Bundle\InstallerBundle\MikyInstallerEvents;
 use Miky\Bundle\SettingsBundle\Manager\SettingsManager;
-use Miky\Bundle\UserBundle\Doctrine\EmployeeManager;
-use Miky\Bundle\UserBundle\Doctrine\UserManager;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class SettingsInstallerSubscriber implements EventSubscriberInterface
