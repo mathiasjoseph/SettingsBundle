@@ -12,6 +12,7 @@ namespace Miky\Bundle\SettingsBundle\EventListener;
 use Miky\Bundle\AdminBundle\Menu\AdminMenuBuilder;
 use Miky\Bundle\MenuBundle\Event\MenuBuilderEvent;
 use Miky\Bundle\SettingsBundle\Manager\SettingsManager;
+use Miky\Bundle\SettingsBundle\Schema\SchemaInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class SettingsMenuSubscriber implements EventSubscriberInterface
@@ -40,18 +41,21 @@ class SettingsMenuSubscriber implements EventSubscriberInterface
 
     public function onAdminMenu(MenuBuilderEvent $event)
     {
+
         $menu = $event->getMenu();
 
         $schemas = $this->settingsManager->getSchemaRegistry()->all();
         $settingsMenu = $menu
             ->addChild('settings')
             ->setLabel('Paramètres')
-            ->setLabelAttribute('icon', 'calendar-check-o')
+            ->setLabelAttribute('icon', 'cog')
         ;
+
         foreach ($schemas as $key => $value){
+            /** @var $value SchemaInterface */
             $settingsMenu
                 ->addChild("settings_".$key, ['route' => 'miky_admin_settings_edit', 'routeParameters' => array('schema' => $key)])
-                ->setLabel("miky.ui.".$key)
+                ->setLabel($value->getLabel())
                 ->setLabelAttribute('icon', 'calendar-check-o')
             ;
         }

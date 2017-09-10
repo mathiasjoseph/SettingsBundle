@@ -25,4 +25,11 @@ interface SchemaInterface
      * @param FormBuilderInterface $builder
      */
     public function buildForm(FormBuilderInterface $builder);
+
+    /**
+     * @return string
+     */
+    public function getLabel();
+
+
 }
