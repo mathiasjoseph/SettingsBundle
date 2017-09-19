@@ -53,7 +53,7 @@ final class SettingsFormFactory implements SettingsFormFactoryInterface
 
         $schema->buildForm($builder);
         $builder->add("submit", SubmitType::class, array(
-            "label" => "miky.ui.submit"
+            "label" => "miky_core.submit"
         ));
 
         return $builder->getForm();
