@@ -1,0 +1,4 @@
+miky_admin_settings_edit:
+    path: /settings/{schema}/edit
+    defaults:
+        _controller: MikySettingsBundle:Backend/SettingsAdmin:update

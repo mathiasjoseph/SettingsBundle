@@ -1,0 +1,33 @@
+{
+  "name" : "mikycorp/resobundle",
+  "description" : "A Settings bundle",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "Mathias Joseph",
+    "email" : "mathias89100@gmail.com"
+  }],
+  "keywords" : [
+    "settings bundle"
+  ],
+  "license" : [
+    "MIT"
+  ],
+
+  "require" : {
+    "mikycorp/corebundle": "~1.0",
+    "mikycorp/registry": "~1.0"
+  },
+  "autoload" : {
+    "psr-0" : {
+      "Miky\\Bundle\\SettingsBundle" : ""
+    }
+  },
+  "target-dir" : "Miky/Bundle/SettingsBundle",
+  "repositories" : [{
+  }],
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "1-dev"
+    }
+  }
+}
